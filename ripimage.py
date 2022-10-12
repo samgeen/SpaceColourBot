@@ -50,7 +50,7 @@ def makedate():
     # THIRTY DAYS HATH SEPTEMBER YES I REMEMBERED THIS
     if month in [9,4,7,11]:
         maxdate = 30
-    # AND THE POEM ENDS WITH "EXCEPT FEBRUARY, WHICH IS FUCKED"
+    # AND THE POEM ENDS WITH "EXCEPT FEBRUARY, WHICH IS MESSED UP"
     if month == 2:
         if year % 4 == 0:
             maxdate = 29
@@ -77,7 +77,7 @@ def maketitle(apodim):
         
 
 def run():
-    # Set up NASA API key
+    # Set up NASA API key (I know, it's dead now)
     os.environ["NASA_API_KEY"] = "K3JpH7ViIRRNcajPKb3LtMxIszuhHkL9DyhVvnuW"
     # Takes images from apod
     date = makedate()
